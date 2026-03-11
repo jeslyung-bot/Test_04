@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #3d3d3d,
+         1px -1px 0 #3d3d3d,
+        -1px  1px 0 #3d3d3d,
+         1px  1px 0 #3d3d3d,
+        -1px  0px 0 #3d3d3d,
+         1px  0px 0 #3d3d3d,
+         0px -1px 0 #3d3d3d,
+         0px  1px 0 #3d3d3d;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    word-spacing: 2cap;
+    line-height: 1.2;
+    text-transform: uppercase;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#Homepage {
+    background-image: url("main page image.png");
+    height: 100vh;    /* Center and scale the image nicely */
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 1;    /* move the background image to the front of the text */
+}
+
+/* containers */
+.left-chinese-container {
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: -1;
+    /* border: 1px solid black; */
+}
+
+.image-container {
+    position: absolute;
+    top: 84%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: 1;
+    /* border: 1px solid black; */
+}
+
+.image-container img {
+  width:25%;
+  height: 25%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-chinese-container {
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: -1;
+    /* border: 1px solid black; */
+}
+
+.right-english-container {
+    position: absolute;
+    top: 84%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: -1;
+    /* border: 1px solid black; */
+}
+
+/* text */
+.left-chinese-text {
+    font-family: "SimSun", "宋体", serif;
+    font-weight: bold;
+    font-size:12rem;
+    color: #dadada;
+    margin-bottom: 2rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+.left-chinese-text div {
+    margin: 0.5rem 0;
+}
+
+.right-chinese-text {
+    font-family: "SimSun", "宋体", serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
+.right-chinese-text div {
+    margin: 0.5rem 0;
+}
+
+.right-english-text {
+    color: #dadada;
+    text-shadow: none;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+.right-english-text div {
+    margin: 0.5rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chinese-text {
+        font-size: 3rem;
+        white-space: normal;
+    }
+    
+    .english-text {
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+    
+    body {
+        letter-spacing: 10px;
+    }
+}
